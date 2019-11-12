@@ -45,7 +45,7 @@
     media: {
       recvonly: true,
       audio: true,
-      video: false
+      video: true
     }
   };
 
@@ -61,12 +61,12 @@
 
   $('#mystop').click(function(){
     remon.close();
-    remonCall.close();
+ 
   });
 
   $('#mystart').click(function(){
     remon.joinCast("my-first-livestreaming");
-    remonCall.connectCall('my-first-channel');
+   
   });
 
   </script>
